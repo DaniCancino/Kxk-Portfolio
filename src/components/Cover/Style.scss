@@ -1,0 +1,89 @@
+@import '../../Sass/variables.scss';
+
+.Cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    .video-cover{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        .text-arch{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: $primary-color;
+            width: 55%;
+            height: 150px;
+            font-size: 6rem;
+            .studio{
+                letter-spacing: 10px;
+            }
+        }
+        .subtitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 2rem;
+            color: $primary-color;
+            font-weight: 700;
+            width: 34%;
+            height: 50px;
+            border-bottom: 1px solid $primary-color;
+            margin-top: -3px;
+            letter-spacing: 2px;
+            .architecture{
+                color: #3DD0CE;
+            }
+        }
+    }
+    .socials-container{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        margin-bottom: 3rem;
+        margin-right: 8rem;
+        z-index: 1;
+        .social-links{
+            text-decoration: none;
+            color: $primary-color;
+            .instagram{
+                transition: 0.4s;
+            }
+            .instagram:hover{
+                color: $second-aux;
+                transform: scale(1.1, 1.1);
+            }
+            .behance{
+                transition: 0.4s;
+            }
+            .behance:hover{
+                color: $second-aux;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}
