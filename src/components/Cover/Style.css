@@ -67,6 +67,10 @@
   letter-spacing: 10px;
 }
 
+.Cover .text-container .text-arch .punto {
+  font-size: 3.5rem;
+}
+
 .Cover .text-container .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +88,7 @@
   font-size: 2rem;
   color: #fff;
   font-weight: 700;
-  width: 34%;
+  width: 450px;
   height: 50px;
   border-bottom: 1px solid #fff;
   margin-top: -3px;
