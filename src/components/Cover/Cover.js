@@ -3,17 +3,33 @@ import { CgInstagram } from "react-icons/cg";
 import { RiBehanceLine } from "react-icons/ri";
 import video from '../../assets/video.mp4'
 import './Style.css'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Cover() {
   return (
     <div className='Cover'>
         <video className='video-cover' src={video} autoPlay loop muted />
-            <div className='text-container'>
+        <AnimatePresence>
+            <motion.div 
+                className='text-container'
+                variants={{hidden: { opacity: 0 },
+                            show: {
+                                opacity: 1,
+                                transition: {
+                                duration: 3,
+                                delay: 1.5
+                                }
+                            }
+                }}
+                initial="hidden"
+                animate="show"
+            >
                 <h3 className='text-arch'>
                     <p>Arch.</p> <p className='studio'>STUDIO</p>
                 </h3>
                 <h3 className='subtitle'><p className='architecture'>ARCHITECTURE</p> <spam>+</spam> DESIGN</h3>
-            </div>
+            </motion.div>
+        </AnimatePresence>
             <div className='socials-container'>
                 <a 
                     className= 'social-links'
