@@ -14,12 +14,12 @@ const [dark, setDark] = useState(false)
 
 useEffect(()=>{
     const scrollListener = () => {
-      if (window.scrollY > 640 && window.scrollY < 1280) {
+      if (window.scrollY > 640 && window.scrollY < 1295) {
         setDark(true);
       } 
-      else if(window.scrollY > 1280 && window.scrollY < 1920){
+      else if(window.scrollY > 1295 && window.scrollY < 1985){
         setDark(false)
-      } else if(window.scrollY > 1920){
+      } else if(window.scrollY > 1985){
         setDark(true)
       }
       else {
