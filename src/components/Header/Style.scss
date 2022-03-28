@@ -1,6 +1,7 @@
 @import '../../Sass/variables.scss';
 
 .Header{
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,17 +21,27 @@
         justify-content: space-between;
         align-items: center;
         width: 40%;
-        color: $secundary-color;
+        color: $primary-color;
         font-size: 1.2rem;
         font-weight: 600;
         margin-right: 70px;
         .links{
             text-decoration: none;
-            color: $primary-color;
             padding-bottom: 10px;
             transition: 0.4s;
+            color: $primary-color;
         }
         .links:hover{
+            // border-bottom: 2px solid $secundary-color;
+            color: $second-aux;
+        }
+        .dark-links{
+            text-decoration: none;
+            padding-bottom: 10px;
+            transition: 0.4s;
+            color: #000;
+        }
+        .dark-links:hover{
             // border-bottom: 2px solid $secundary-color;
             color: $second-aux;
         }

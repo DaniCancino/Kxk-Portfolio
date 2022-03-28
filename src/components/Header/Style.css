@@ -1,4 +1,5 @@
 .Header {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +40,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  color: #101010;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   margin-right: 70px;
@@ -47,13 +48,25 @@
 
 .Header .links-container .links {
   text-decoration: none;
-  color: #fff;
   padding-bottom: 10px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #fff;
 }
 
 .Header .links-container .links:hover {
+  color: #3DD0CE;
+}
+
+.Header .links-container .dark-links {
+  text-decoration: none;
+  padding-bottom: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #000;
+}
+
+.Header .links-container .dark-links:hover {
   color: #3DD0CE;
 }
 /*# sourceMappingURL=Style.css.map */
