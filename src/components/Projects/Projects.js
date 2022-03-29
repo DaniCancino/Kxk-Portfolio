@@ -32,48 +32,45 @@ const Projects = () => {
   }
 
   const variants3 = {
-    hidden: { x: -150, opacity: 0 },
+    hidden: { x: -400, opacity: 0 },
     show: {
         x: 0,
         opacity: 1,
         transition: {
-        duration: 1.3,
-        delay: 0.6
+        duration: 0.6,
         }
     }
   }
 
   const variants4 = {
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x: -350, opacity: 0 },
     show: {
         x: 0,
         opacity: 1,
         transition: {
-        duration: 1.3,
+        duration: 0.5,
         }
     }
   }
 
   const variants5 = {
-    hidden: { x: -150, opacity: 0 },
+    hidden: { x: -400, opacity: 0 },
     show: {
         x: 0,
         opacity: 1,
         transition: {
-        duration: 1.3,
-        delay: 0.8
+        duration: 0.7,
         }
     }
   }
 
   const variants6 = {
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x: -350, opacity: 0 },
     show: {
         x: 0,
         opacity: 1,
         transition: {
-        duration: 1.3,
-        delay: 0.4
+        duration: 0.8,
         }
     }
   }
