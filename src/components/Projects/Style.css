@@ -13,13 +13,77 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  color: #fff;
   background-color: #101010;
 }
 
 .Projects .project-title {
-  font-size: 3.5rem;
-  margin-top: 130px;
+  position: absolute;
+  margin-top: -10px;
+  font-size: 9rem;
+  opacity: 0.03;
   color: #fff;
+}
+
+.Projects .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  margin-top: 140px;
+}
+
+.Projects .project-container .subtitle-projects {
+  font-size: 2.5rem;
+  margin-top: -70px;
+}
+
+.Projects .project-container .images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+.Projects .project-container .images-container .image-project {
+  width: 500px;
+  height: 350px;
+  margin-bottom: 60px;
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.Projects .project-container .images-container .image-project:hover {
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
 }
 /*# sourceMappingURL=Style.css.map */

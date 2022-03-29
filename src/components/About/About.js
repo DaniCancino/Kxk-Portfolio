@@ -3,6 +3,7 @@ import './Style.css';
 import { Link } from 'react-router-dom';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import H7 from '../../assets/H7.png';
 
 
 
@@ -69,7 +70,6 @@ const About = () => {
 
   return (
       <div className='About'>
-          <div className='About'>
           <motion.h2 
             className='about-title'
             variants={variants1}
@@ -78,27 +78,37 @@ const About = () => {
           >
             Acerca de nosotros
           </motion.h2>
-
           <div className='about-container'>
-            <motion.h3 
-              className='about-subtitle'
+            <motion.div 
+              className='about-text-container'
               variants={variants2}
+              initial='hidden'
+              animate= {controls}
+              ref={ref}
+            >
+              <motion.h3 
+                className='about-subtitle'
+              >
+                  Diseñamos cada proyecto como si fuera el unico
+              </motion.h3>
+
+              <motion.p 
+                className='about-text'
+                variants={variants3}
+                  initial='hidden'
+                  animate= {controls}
+              >
+                  KxKarquitectura está conformada por Walter Kuttel y Krismary Chacón. Nos especializamos en diseños, Modelado 3D, renderizado en 360° y tours virtuales.<br/>Ofrecemos una visión general de la amplia gama de diseños en diferentes tipos de entornos.<br/>Nuestro trabajo se caracteriza por la simplicidad, modernidad y elegancia. Siempre de la mano de nuestros clientes.
+              </motion.p>
+            </motion.div>
+              <motion.img 
+                className='image-about' 
+                src={H7} 
+                alt='image about'
+                variants={variants2}
                 initial='hidden'
                 animate= {controls}
-                ref={ref}
-            >
-                Diseñamos cada proyecto como si fuera el unico
-            </motion.h3>
-
-            <motion.p 
-              className='about-text'
-              variants={variants3}
-                initial='hidden'
-                animate= {controls}
-            >
-                KxKarquitectura está conformada por Walter Kuttel y Krismary Chacón. Nos especializamos en diseños, Modelado 3D, renderizado en 360° y tours virtuales.<br/>Ofrecemos una visión general de la amplia gama de diseños en diferentes tipos de entornos.<br/>Nuestro trabajo se caracteriza por la simplicidad, modernidad y elegancia. Siempre de la mano de nuestros clientes.
-            </motion.p>
-
+              />
           </div>
           <motion.div
               variants={variants4}
@@ -112,7 +122,7 @@ const About = () => {
             Descubre más
           </Link>
           </motion.div>
-          </div>
+
       </div>
   )
 }
