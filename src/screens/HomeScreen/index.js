@@ -11,19 +11,43 @@ import Contact from '../../components/Contacto/Contact';
 const Home = () =>{
 
 const [dark, setDark] = useState(false)
+const [light, setLight] = useState(false)
+const [about, setAbout] = useState(false)
+const [dinamicHeader, setDinamicHeader] = useState('')
 
 useEffect(()=>{
     const scrollListener = () => {
-      if (window.scrollY > 640 && window.scrollY < 1295) {
+      if(window.scrollY === 0 ){
+        setLight(false)
+      }
+      else if(window.scrollY > 10 && window.scrollY < 30){
+        setAbout(false)
         setDark(true);
+        setLight(true)
+        setDinamicHeader('light-header')
+      }
+      else if(window.scrollY > 400 && window.scrollY < 640){
+        setAbout(true)
+        setLight(true)
+        setDark(true);
+        setDinamicHeader('light-header')
+      }
+      else if (window.scrollY > 640 && window.scrollY < 1295) {
+        setLight(true)
+        setDinamicHeader('light-header')
       } 
       else if(window.scrollY > 1295 && window.scrollY < 1985){
         setDark(false)
-      } else if(window.scrollY > 1985){
+        setLight(true)
+        setDinamicHeader('dark-header')
+      } 
+      else if(window.scrollY > 1985){
         setDark(true)
+        setLight(true)
+        setDinamicHeader('light-header')
       }
       else {
-        setDark(false);
+        setDark(false)
       }
     }
     window.addEventListener('scroll', scrollListener);
@@ -34,9 +58,9 @@ useEffect(()=>{
 
     return(
         <div className='Home'>
-            <Header dark={dark}/>
+            <Header dark={dark} light={light} headerColor={dinamicHeader}/>
             <Cover />
-            <About />
+            <About about={about}/>
             <Projects />
             <Contact />
         </div>

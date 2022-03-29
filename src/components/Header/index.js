@@ -3,9 +3,9 @@ import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import './Style.css'
 
-const Header = ({dark}) =>{
+const Header = ({dark, light, headerColor}) =>{
     return(
-        <div className='Header'>
+        <div className= {light? headerColor : 'Header'}>
             <Link to='/'><img src={logo} alt='logo KxK' className='logo' /></Link>
             <div className='links-container'>
                 <Link to='/' className={dark? 'dark-links' : 'links'}>Inicio</Link>
