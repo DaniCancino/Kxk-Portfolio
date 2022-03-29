@@ -12,7 +12,6 @@ const Home = () =>{
 
 const [dark, setDark] = useState(false)
 const [light, setLight] = useState(false)
-const [about, setAbout] = useState(false)
 const [dinamicHeader, setDinamicHeader] = useState('')
 
 useEffect(()=>{
@@ -21,13 +20,11 @@ useEffect(()=>{
         setLight(false)
       }
       else if(window.scrollY > 10 && window.scrollY < 30){
-        setAbout(false)
         setDark(true);
         setLight(true)
         setDinamicHeader('light-header')
       }
       else if(window.scrollY > 400 && window.scrollY < 640){
-        setAbout(true)
         setLight(true)
         setDark(true);
         setDinamicHeader('light-header')
@@ -60,7 +57,7 @@ useEffect(()=>{
         <div className='Home'>
             <Header dark={dark} light={light} headerColor={dinamicHeader}/>
             <Cover />
-            <About about={about}/>
+            <About />
             <Projects />
             <Contact />
         </div>
