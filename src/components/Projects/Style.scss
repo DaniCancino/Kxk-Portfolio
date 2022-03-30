@@ -30,13 +30,26 @@
       
         .images-container{
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             width: 100%;
             height: auto;
             margin-top: 60px;
+            .up-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+            }
+            .down-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+            }
             .image-project{
                 width: 500px;
                 height: 350px;

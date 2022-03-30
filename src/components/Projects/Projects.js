@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Style.css';
 import apto from '../../assets/projects/apto.png';
 import cocina from '../../assets/projects/cocina.png';
-import dubai from '../../assets/projects/dubai.jpg';
+import dubai from '../../assets/projects/dubai.png';
 import milencinos from '../../assets/projects/milencinos.jpg';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -103,41 +103,45 @@ const Projects = () => {
             Nuestros proyectos destacados
           </motion.h3>
           <motion.div className='images-container' ref={ref}>
-            <motion.img 
-              src={apto} 
-              alt='apartamento' 
-              className='image-project'
-              variants={variants3}
-              initial='hidden'
-              animate= {controls}
-            />
+            <div className='up-container'>
+              <motion.img 
+                src={apto} 
+                alt='apartamento' 
+                className='image-project'
+                variants={variants3}
+                initial='hidden'
+                animate= {controls}
+              />
 
-            <motion.img 
-              src={cocina} 
-              alt='cocina' 
-              className='image-project'
-              variants={variants4}
-              initial='hidden'
-              animate= {controls} 
-            />
+              <motion.img 
+                src={cocina} 
+                alt='cocina' 
+                className='image-project'
+                variants={variants4}
+                initial='hidden'
+                animate= {controls} 
+              />
+            </div>
 
-            <motion.img 
-              src={dubai} 
-              alt='dubai' 
-              className='image-project'
-              variants={variants5}
-              initial='hidden'
-              animate= {controls} 
-            />
+            <div className='down-container'>
+              <motion.img 
+                src={dubai} 
+                alt='dubai' 
+                className='image-project'
+                variants={variants5}
+                initial='hidden'
+                animate= {controls} 
+              />
 
-            <motion.img 
-              src={milencinos}
-              alt='milencinos'
-              className='image-project'
-              variants={variants6}
-              initial='hidden'
-              animate= {controls}
-            />
+              <motion.img 
+                src={milencinos}
+                alt='milencinos'
+                className='image-project'
+                variants={variants6}
+                initial='hidden'
+                animate= {controls}
+              />
+            </div>
           </motion.div>
         </div>
     </div>
