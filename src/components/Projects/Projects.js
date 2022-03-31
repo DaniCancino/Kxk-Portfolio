@@ -6,6 +6,7 @@ import dubai from '../../assets/projects/dubai.png';
 import milencinos from '../../assets/projects/milencinos.jpg';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { MdHorizontalRule } from "react-icons/md";
 
 const Projects = () => {
   const controls = useAnimation();
@@ -32,45 +33,45 @@ const Projects = () => {
   }
 
   const variants3 = {
-    hidden: { x: -400, opacity: 0 },
+    hidden: {opacity: 0 },
     show: {
-        x: 0,
         opacity: 1,
         transition: {
-        duration: 0.6,
+        duration: 1,
+        delay: 1
         }
     }
   }
 
   const variants4 = {
-    hidden: { x: -350, opacity: 0 },
+    hidden: {opacity: 0 },
     show: {
-        x: 0,
         opacity: 1,
         transition: {
-        duration: 0.5,
+        duration: 1,
+        delay: 1.5
         }
     }
   }
 
   const variants5 = {
-    hidden: { x: -400, opacity: 0 },
+    hidden: {opacity: 0 },
     show: {
-        x: 0,
         opacity: 1,
         transition: {
-        duration: 0.7,
+        duration: 1,
+        delay: 2
         }
     }
   }
 
   const variants6 = {
-    hidden: { x: -350, opacity: 0 },
+    hidden: {opacity: 0 },
     show: {
-        x: 0,
         opacity: 1,
         transition: {
-        duration: 0.8,
+        duration: 1,
+        delay: 2.5
         }
     }
   }
@@ -104,43 +105,46 @@ const Projects = () => {
           </motion.h3>
           <motion.div className='images-container' ref={ref}>
             <div className='up-container'>
-              <motion.img 
-                src={apto} 
-                alt='apartamento' 
-                className='image-project'
+              <motion.div 
+                className='img-container'
                 variants={variants3}
                 initial='hidden'
                 animate= {controls}
-              />
-
-              <motion.img 
-                src={cocina} 
-                alt='cocina' 
-                className='image-project'
+              >
+                <img src={apto} alt='apartamento' className='image-project' />
+                <p className='down-text-img'>Apartamento HG <MdHorizontalRule size={40}/> Mexico</p>
+              </motion.div>
+              <motion.div 
+                className='img-container'
                 variants={variants4}
                 initial='hidden'
                 animate= {controls} 
-              />
+              >
+                <img src={cocina} alt='cocina' className='image-project' />
+                <p className='down-text-img'>Cocina AB <MdHorizontalRule size={40}/> Mexico</p>
+              </motion.div>
             </div>
 
             <div className='down-container'>
-              <motion.img 
-                src={dubai} 
-                alt='dubai' 
-                className='image-project'
+              <motion.div 
+                className='img-container'
                 variants={variants5}
                 initial='hidden'
                 animate= {controls} 
-              />
+              >
+                <img src={dubai} alt='dubai' className='image-project' />
+                <p className='down-text-img'>Fachada de Villa PK <MdHorizontalRule size={40}/> Dubai</p>
+              </motion.div>
 
-              <motion.img 
-                src={milencinos}
-                alt='milencinos'
-                className='image-project'
+              <motion.div 
+                className='img-container'
                 variants={variants6}
                 initial='hidden'
                 animate= {controls}
-              />
+              >
+                <img src={milencinos} alt='milencinos' className='image-project' />
+                <p className='down-text-img'>Villa Milencinos DM <MdHorizontalRule size={40}/> Mexico</p>
+              </motion.div>
             </div>
           </motion.div>
         </div>

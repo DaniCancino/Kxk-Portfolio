@@ -1,0 +1,108 @@
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #101010;
+  color: #fff;
+}
+
+.Footer .logo-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.Footer .logo-text-container .logo-footer {
+  width: 80px;
+  height: 80px;
+}
+
+.Footer .logo-text-container .footer-title {
+  font-size: 1.2rem;
+}
+
+.Footer .socials-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.Footer .socials-footer-container .social-links-footer {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.Footer .socials-footer-container .social-links-footer:hover {
+  color: #3DD0CE;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.Footer .design-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.Footer .design-by .link-design {
+  text-decoration: none;
+  color: #3DD0CE;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Footer .design-by .link-design:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,3 +1,5 @@
+@import '../../Sass/variables.scss';
+
 .Projects{
     display: flex;
     flex-direction: column;
@@ -50,16 +52,43 @@
                 align-items: center;
                 width: 100%;
             }
+            .img-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                transition: 0.4s;
+            }
+            .img-container:hover{
+                cursor: pointer;
+                .image-project{
+                    cursor: pointer;
+                    filter: none;
+                }
+                .down-text-img{
+                    color: $second-aux;
+                    cursor: pointer;
+                }
+            }
             .image-project{
                 width: 500px;
                 height: 350px;
-                margin-bottom: 60px;
+                // margin-bottom: 60px;
                 filter: grayscale(0.9);
                 transition: 0.7s;
             }
             .image-project:hover{
                 cursor: pointer;
                 filter: none;
+            }
+            .down-text-img{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 50px;
+                letter-spacing: 2px;
+                width: 70%;
             }
         }
     }
