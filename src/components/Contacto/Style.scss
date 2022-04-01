@@ -104,5 +104,37 @@
                 }
             }
         }
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 400px;
+            height: 500px;
+            .subtitle-contact{
+                font-size: 1.5rem;
+                margin-top: 180px;
+            }
+            .whatsapp-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .whatsapp{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-right: 20px;
+                }
+                .whatsapp-logo{
+                    color:#101010;
+                    transition: 0.4s;
+                }
+                .whatsapp-logo:hover{
+                    color: $second-aux;
+                    transform: scale(1.05, 1.05);
+                }
+            }
+        }
     }
 }

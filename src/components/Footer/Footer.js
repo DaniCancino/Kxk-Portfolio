@@ -30,7 +30,7 @@ const Footer = () => {
                 </a>
       </div>
       <div className='design-by'>
-        <p>Design by</p>
+        <p>Designed by</p>
         <a 
           href='https://danielcancino.vercel.app/'
           className='link-design'
