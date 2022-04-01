@@ -33,7 +33,7 @@ const Contact = () => {
              <div className='whatsapp-container'>
                <p className='whatsapp'>whatsapp: </p>
                 <a 
-                  href='https://api.whatsapp.com/send?phone=5491126318243'
+                  href='https://api.whatsapp.com/send?phone=584244252063'
                   target='_blank'
                   rel='noreferrer'
                   className='whatsapp-logo'
