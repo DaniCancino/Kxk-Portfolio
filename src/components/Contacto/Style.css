@@ -281,6 +281,12 @@
           transform: scale(1.05, 1.05);
 }
 
+@media (max-width: 1920px) {
+  .Contacto .contact-container .contact-info {
+    width: 100vw;
+  }
+}
+
 @media (max-width: 460px) {
   .Contacto .contact-title {
     font-size: 3.2rem;

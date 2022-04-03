@@ -149,7 +149,15 @@
 }
 
 
-
+@media (max-width: 1920px){
+    .Contacto{
+        .contact-container{
+            .contact-info{
+                width: 100vw;
+            }
+        }
+    }
+}
 
 
 
