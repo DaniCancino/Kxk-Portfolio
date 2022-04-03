@@ -25,9 +25,9 @@ function Cover() {
                 animate="show"
             >
                 <h3 className='text-arch'>
-                    <p>Arch<spam className='punto'>.</spam></p> <p className='studio'>STUDIO</p>
+                    <p>Arch<span className='punto'>.</span></p> <p className='studio'>STUDIO</p>
                 </h3>
-                <h3 className='subtitle'><p className='architecture'>ARCHITECTURE</p> <spam>+</spam> DESIGN</h3>
+                <h3 className='subtitle'><p className='architecture'>ARCHITECTURE</p> <span>+</span> DESIGN</h3>
             </motion.div>
         </AnimatePresence>
             <div className='socials-container'>

@@ -168,4 +168,88 @@
   letter-spacing: 2px;
   width: 70%;
 }
+
+@media (max-width: 1194px) {
+  .Projects {
+    height: auto;
+  }
+  .Projects .project-container .images-container .up-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Projects .project-container .images-container .down-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Projects .project-container .images-container .image-project {
+    width: 650px;
+    height: 450px;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .Projects .project-container .images-container .down-text-img {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+  .Projects .project-container .images-container .img-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .Projects .project-title {
+    font-size: 4rem;
+    margin-top: 25px;
+    opacity: 0.2;
+  }
+  .Projects .project-container .subtitle-projects {
+    font-size: 1.3rem;
+  }
+  .Projects .project-container .images-container {
+    margin-top: 20px;
+  }
+  .Projects .project-container .images-container .image-project {
+    width: 100vw;
+    height: 38vh;
+  }
+  .Projects .project-container .images-container .down-text-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .Projects .project-title {
+    font-size: 3.2rem;
+  }
+  .Projects .project-container .subtitle-projects {
+    margin-top: -15px;
+    font-size: 1rem;
+  }
+  .Projects .project-container .images-container .down-text-img {
+    width: 95%;
+  }
+}
 /*# sourceMappingURL=Style.css.map */

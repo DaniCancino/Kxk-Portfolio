@@ -15,4 +15,11 @@
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 1024px) {
+  .Home {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=Style.css.map */

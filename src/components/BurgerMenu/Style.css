@@ -1,0 +1,81 @@
+.BurgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.BurgerMenu .Open-Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.BurgerMenu .Open-Menu .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 35px;
+  margin-right: 70px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.BurgerMenu .Open-Menu .close-button:hover {
+  cursor: pointer;
+  color: #3DD0CE;
+}
+
+.BurgerMenu .Open-Menu .burger-links {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.BurgerMenu .Open-Menu .burger-links:hover {
+  color: #3DD0CE;
+}
+
+@media (max-width: 460px) {
+  .BurgerMenu .Open-Menu .close-button {
+    margin-right: 14px;
+  }
+  .BurgerMenu .Open-Menu .burger-links {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,16 +1,23 @@
 import React, { useState } from 'react'
 import './Style.css'
 import { FaWhatsapp } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Contact = () => {
   const initialState = {
     name : '',
     email : '',
+    subject: '',
     text: ''
   }
 
+  
   const [form, setForm] = useState(initialState);
-  console.log(form)
+  const [load, setLoad] = useState(false);
+  
+  
 
   const handleChange = (e) =>{
     setForm({
@@ -19,9 +26,29 @@ const Contact = () => {
     })
 }
 
-// const handleReset = () =>{
-//   setForm(initialState)
-// }
+  const handleReset = () =>{
+    setForm(initialState)
+  }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoad(true)
+    if(!form.name || !form.email || !form.subject || !form.text){
+        setLoad(false)
+        swal("Error", "Asegurate de llenar todos lo campos correctamente.", "error");
+    }else{
+        emailjs.sendForm('service_8azqdv3', 'template_pa5fhcn', form.current, 'user_XWEOmi1dwZVxRyxRY2VO5')
+        .then((result) => {
+            setLoad(false)
+            console.log(result.text);
+            swal("Email enviado", "Me pondré en contacto contigo lo mas pronto posible.", "success");
+            handleReset()
+        }, (error) => {
+            swal("Error", error.text, "error");
+            console.log(error.text);
+        });
+    }
+  };
 
 
   return (
@@ -43,7 +70,8 @@ const Contact = () => {
             </div>
          </div>
          <div className='contact-form'>
-            <form className='form-container'>
+         {load ? <div className="loader" ><ClipLoader size={50} color="#3DD0CE" loading={load}/></div> : 
+            <form className='form-container' onSubmit={sendEmail} ref={form}>
               <input 
                 type='text'
                 className='name'
@@ -51,7 +79,7 @@ const Contact = () => {
                 placeholder='Nombre'
                 value={form.name}
                 onChange={handleChange}
-                autocomplete= 'off'
+                autoComplete= 'off'
               />
 
               <input 
@@ -61,7 +89,17 @@ const Contact = () => {
                 placeholder='Email'
                 value={form.email}
                 onChange={handleChange}
-                autocomplete= 'off'
+                autoComplete= 'off'
+              />
+
+              <input 
+                type='text'
+                className='email'
+                name='subject'
+                placeholder='Asunto'
+                value={form.subject}
+                onChange={handleChange}
+                autoComplete= 'off'
               />
 
               <textarea 
@@ -70,11 +108,11 @@ const Contact = () => {
                 placeholder='Hablanos sobre tu proyecto'
                 value={form.text}
                 onChange={handleChange}
-                autocomplete= 'off'
+                autoComplete= 'off'
               />
 
               <button type='submit' className='button-submit'>Enviar email</button>
-            </form>
+            </form>}
          </div>
        </div>
     </div>

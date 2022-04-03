@@ -57,6 +57,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   width: 710px;
   height: 150px;
@@ -120,7 +123,6 @@
   width: 120px;
   margin-bottom: 3rem;
   margin-right: 8rem;
-  z-index: 1;
 }
 
 .Cover .socials-container .social-links {
@@ -148,5 +150,56 @@
   color: #3DD0CE;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 1024px) {
+  .Cover {
+    width: 100vw;
+  }
+  .Cover .text-container {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .Cover .text-container {
+    margin-top: 150px;
+  }
+  .Cover .text-container .text-arch {
+    width: 75vw;
+    font-size: 2.5rem;
+  }
+  .Cover .text-container .text-arch .punto {
+    font-size: 1.5rem;
+  }
+  .Cover .text-container .text-arch .studio {
+    letter-spacing: 3px;
+  }
+  .Cover .text-container .subtitle {
+    width: 80vw;
+    font-size: 1.5rem;
+    margin-left: 0px;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Cover .text-container {
+    margin-top: 80px;
+  }
+  .Cover .text-container .text-arch {
+    width: 90vw;
+  }
+  .Cover .text-container .subtitle {
+    width: 90vw;
+    font-size: 1.2rem;
+    margin-top: -80px;
+  }
+  .Cover .socials-container {
+    width: 90vw;
+    margin-right: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

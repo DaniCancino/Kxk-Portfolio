@@ -57,9 +57,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 500px;
+  width: 600px;
   height: 500px;
   margin-top: 80px;
+}
+
+.Contacto .contact-container .contact-form .loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
 }
 
 .Contacto .contact-container .contact-form .form-container {
@@ -76,7 +95,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 500px;
   height: 100%;
   margin-top: 100px;
 }
@@ -218,7 +237,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 450px;
   height: 500px;
 }
 
@@ -260,5 +279,43 @@
   color: #3DD0CE;
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 460px) {
+  .Contacto .contact-title {
+    font-size: 3.2rem;
+    margin-top: 20px;
+  }
+  .Contacto .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .Contacto .contact-container .contact-form {
+    margin-top: -200px;
+    width: 100vw;
+  }
+  .Contacto .contact-container .contact-form .form-container {
+    width: 90vw;
+    margin-top: -10px;
+  }
+  .Contacto .contact-container .contact-info .subtitle-contact {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Contacto .contact-title {
+    font-size: 2.8rem;
+  }
+  .Contacto .contact-container .contact-form {
+    margin-top: -250px;
+  }
+  .Contacto .contact-container .contact-info .subtitle-contact {
+    font-size: 1.2rem;
+    margin-top: 115px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
