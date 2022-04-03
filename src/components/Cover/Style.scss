@@ -10,7 +10,7 @@
     .video-cover{
         position: absolute;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
         z-index: -1;

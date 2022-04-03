@@ -89,7 +89,7 @@ const About = () => {
               <motion.h3 
                 className='about-subtitle'
               >
-                  Diseñamos cada proyecto como si fuera el unico
+                  Diseñamos cada proyecto con un estilo único
               </motion.h3>
 
               <motion.p 

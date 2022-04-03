@@ -19,7 +19,7 @@
 .Cover .video-cover {
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
