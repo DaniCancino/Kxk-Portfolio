@@ -164,12 +164,11 @@
 @media (max-width: 360px){
     .Projects{
         .project-title{
-            font-size: 3.2rem;
-            opacity: 1;
+            display: none;
         }
         .project-container{
             .subtitle-projects{
-                margin-top: -15px;
+                margin-top: -80px;
                 font-size: 1.2rem;
             }
             .images-container{
