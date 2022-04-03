@@ -137,9 +137,7 @@
 @media (max-width: 460px){
     .Projects{
         .project-title{
-            font-size: 4rem;
-            margin-top: 25px;
-            opacity: 0.2;
+            display: none;
         }
         .project-container{
             .subtitle-projects{

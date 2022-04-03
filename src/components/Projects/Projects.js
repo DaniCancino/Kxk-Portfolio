@@ -15,7 +15,7 @@ const Projects = () => {
   const variants1 = {
     hidden: { opacity: 0 },
     show: {
-        opacity: 0.015,
+        opacity: 0.05,
         transition: {
         duration: 1
         }
