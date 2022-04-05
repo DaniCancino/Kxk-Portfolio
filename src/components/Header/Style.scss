@@ -34,12 +34,23 @@
             transition: 0.4s;
             color: $primary-color;
         }
+        .dark{
+            text-decoration: none;
+            padding-bottom: 10px;
+            transition: 0.4s;
+            color: #101010;
+        }
         .links:hover{
             // border-bottom: 2px solid $secundary-color;
             color: $second-aux;
         }
     }
 }
+
+
+
+
+
 
 
 
@@ -64,8 +75,16 @@
         }
         .burger-element{
             display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            top: 0;
             margin-right: 70px;
             color: #fff;
+        }
+        .dark-burger-element{
+            display: flex;
+            margin-right: 70px;
+            color: #101010;
         }
     }
 }

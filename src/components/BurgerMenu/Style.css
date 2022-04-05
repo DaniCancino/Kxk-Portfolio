@@ -24,19 +24,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 15%;
   height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
@@ -47,7 +45,7 @@
   top: 0;
   right: 0;
   margin-top: 35px;
-  margin-right: 70px;
+  margin-right: 55px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -57,7 +55,26 @@
   color: #3DD0CE;
 }
 
-.BurgerMenu .Open-Menu .burger-links {
+.BurgerMenu .Open-Menu .links-burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60%;
+  margin-top: 60px;
+}
+
+.BurgerMenu .Open-Menu .links-burger-container .burger-links {
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
@@ -66,16 +83,22 @@
   font-weight: 600;
 }
 
-.BurgerMenu .Open-Menu .burger-links:hover {
+.BurgerMenu .Open-Menu .links-burger-container .burger-links:hover {
   color: #3DD0CE;
 }
 
 @media (max-width: 460px) {
-  .BurgerMenu .Open-Menu .close-button {
-    margin-right: 14px;
+  .BurgerMenu .Open-Menu {
+    width: 25%;
   }
-  .BurgerMenu .Open-Menu .burger-links {
-    font-size: 1.5rem;
+  .BurgerMenu .Open-Menu .close-button {
+    margin-right: 25px;
+  }
+  .BurgerMenu .Open-Menu .links-burger-container {
+    margin-top: 80px;
+  }
+  .BurgerMenu .Open-Menu .links-burger-container .burger-links {
+    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=Style.css.map */

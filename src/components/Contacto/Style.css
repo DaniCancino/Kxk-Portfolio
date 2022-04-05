@@ -60,6 +60,7 @@
   width: 600px;
   height: 500px;
   margin-top: 80px;
+  margin-right: 100px;
 }
 
 .Contacto .contact-container .contact-form .loader {
@@ -285,6 +286,9 @@
   .Contacto .contact-container .contact-info {
     width: 100vw;
   }
+  .Contacto .contact-container .contact-form {
+    margin-right: 70px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -301,6 +305,7 @@
   }
   .Contacto .contact-container .contact-form {
     margin-top: -200px;
+    margin-right: 0px;
     width: 100vw;
   }
   .Contacto .contact-container .contact-form .form-container {

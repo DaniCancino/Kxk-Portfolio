@@ -31,6 +31,7 @@
             width: 600px;
             height:500px;
             margin-top: 80px;
+            margin-right: 100px;
             .loader{
                 display: flex;
                 flex-direction: column;
@@ -155,6 +156,9 @@
             .contact-info{
                 width: 100vw;
             }
+            .contact-form{
+                margin-right: 70px;
+            }
         }
     }
 }
@@ -174,6 +178,7 @@
             height: auto;
             .contact-form{
                 margin-top: -200px;
+                margin-right: 0px;
                 width: 100vw;
                 .form-container{
                     width: 90vw;

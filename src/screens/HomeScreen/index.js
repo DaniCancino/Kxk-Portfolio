@@ -35,7 +35,6 @@ useEffect(()=>{
 
     return(
         <div className='Home'>
-            <Header dark={dark} light={light} />
             <Cover />
             <About />
             <Projects />
