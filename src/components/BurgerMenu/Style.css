@@ -92,13 +92,10 @@
     width: 25%;
   }
   .BurgerMenu .Open-Menu .close-button {
-    margin-right: 25px;
+    margin-right: 28px;
   }
   .BurgerMenu .Open-Menu .links-burger-container {
     margin-top: 80px;
-  }
-  .BurgerMenu .Open-Menu .links-burger-container .burger-links {
-    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=Style.css.map */
