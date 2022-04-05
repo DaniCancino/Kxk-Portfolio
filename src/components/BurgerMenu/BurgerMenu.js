@@ -43,35 +43,35 @@ const BurgerMenu = () => {
                 transition={{type: 'Spring', duration: 0.7, bounce: 1, stiffness: 100 }}
                 exit={{x: '200vw'}}
             >
-                <span onClick={() => handleClose()} className='close-button'><FaArrowRight size={40} /></span>
+                <span onClick={() => handleClose()} className='close-button'><FaArrowRight size={38} /></span>
                 <div className='links-burger-container'>
                     <Link 
                         to='/' 
                         className='burger-links' 
                         onClick={() => handleFalse()}
                     >
-                        <AiFillHome size={45} color='#fff' />
+                        <AiFillHome size={38} color='#fff' />
                     </Link>
                     <Link
                         to='about'
                         className='burger-links'
                         onClick={() => handleTrue()}
                     >
-                        <FaUsers size={45} color= '#fff' />
+                        <FaUsers size={38} color= '#fff' />
                     </Link>
                     <Link
                         to='projects'
                         className='burger-links'
                         onClick={() => handleFalse()}
                     >
-                        <AiFillPicture size={45} color='#fff' />
+                        <AiFillPicture size={38} color='#fff' />
                     </Link>
                     <Link
                         to='contact'
                         className='burger-links'
                         onClick={() => handleTrue()}
                     >
-                        <MdDesignServices size={45} color='#fff' />
+                        <MdDesignServices size={38} color='#fff' />
                     </Link>
                 </div>
             </motion.div>
