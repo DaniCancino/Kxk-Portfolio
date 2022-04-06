@@ -70,7 +70,7 @@ const BurgerMenu = () => {
                         <AiFillPicture size={38} color='#fff' />
                     </Link>
                     <Link
-                        to='contact'
+                        to='services'
                         className='burger-links'
                         onClick={() => handleTrue()}
                     >

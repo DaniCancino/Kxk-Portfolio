@@ -44,11 +44,11 @@ const Header = () =>{
                     Proyectos
                 </Link>
                 <Link 
-                    to='contact'
+                    to='services'
                     className={headerState ? 'dark' : 'links'} 
                     onClick={() => handleTrue()}
                 >
-                        Contacto
+                        Servicios
                 </Link>
             </div>
             <div className='burger-element'><BurgerMenu /></div>
