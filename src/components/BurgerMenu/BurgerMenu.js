@@ -5,11 +5,14 @@ import { MdDesignServices} from "react-icons/md";
 import { Link } from 'react-router-dom';
 import './Style.css';
 import { AnimatePresence, motion } from "framer-motion";
+import {useSelector, useDispatch} from 'react-redux';
+import {Dark, Light} from '../../redux/Actions'
 
 const BurgerMenu = () => {
 
     const [close, setClose] = useState(true)
-    const [dark, setDark] = useState(false)
+    const burgerState = useSelector(state => state.dark)
+    const dispatch = useDispatch()
 
     const handleOpen = () =>{
         setClose(false)
@@ -21,27 +24,27 @@ const BurgerMenu = () => {
 
 
     const handleTrue = () =>{
-        setDark(true)
+        dispatch(Dark())
     }
 
     const handleFalse = () =>{
-        setDark(false)
+        dispatch(Light())
     }
 
 
 
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
     <div className='BurgerMenu'>
-        {close ? <FaBars size={30} color={dark ? '#101010' : '#fff'}onClick={()=> handleOpen()}/>
+        {close ? <FaBars size={30} color={burgerState ? '#101010' : '#fff'} onClick={()=> handleOpen()}/>
             :
             <motion.div 
                 className='Open-Menu'
                 key={close}
                 initial={{x: '200vw'}}
                 animate={{x: 0}}
-                transition={{type: 'Spring', duration: 0.7, bounce: 1, stiffness: 100 }}
-                exit={{x: '200vw'}}
+                transition={{type: 'Spring', duration: 0.3, bounce: 1, stiffness: 50 }}
+                exit={{x: '200vw', duration: 0.7}}
             >
                 <span onClick={() => handleClose()} className='close-button'><FaArrowRight size={38} /></span>
                 <div className='links-burger-container'>

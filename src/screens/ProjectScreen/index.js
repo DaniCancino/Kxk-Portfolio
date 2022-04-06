@@ -1,9 +1,17 @@
 import React from 'react'
+import ImageCard from '../../components/ImageCard/ImageCard';
 import './Style.css';
+import projects from '../../Data/Data';
 
 const ProjectScreen = () => {
+  
   return (
-    <div className='ProjectScreen'>ProjectScreen</div>
+    <div className='ProjectScreen'>
+      <h1 className='title-projectScrenn'>Proyectos</h1>
+      <div className='card-projects-container'>
+      {projects.map(el => <ImageCard srcImage={el} key={el.indexOf()}/>)}
+      </div>
+    </div>
   )
 }
 

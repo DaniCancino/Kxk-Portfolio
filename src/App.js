@@ -4,6 +4,7 @@ import Home from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import Header from './components/Header/'
 import ProjectScreen from './screens/ProjectScreen';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/about' element={<AboutScreen />} />
         <Route path='/projects' element={<ProjectScreen />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

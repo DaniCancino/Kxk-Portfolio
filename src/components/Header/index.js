@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import './Style.css'
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import { useSelector, useDispatch } from 'react-redux';
+import {Dark, Light} from '../../redux/Actions'
 
 const Header = () =>{
-    const [dark, setDark] = useState(false)
+    const dispatch = useDispatch()
+    const headerState = useSelector((state) => state.dark)
 
     const handleTrue = () =>{
-        setDark(true)
+        dispatch(Dark())
     }
 
     const handleFalse = () =>{
-        setDark(false)
+        dispatch(Light())
     }
 
     return(
@@ -21,28 +24,28 @@ const Header = () =>{
             <div className='links-container'>
                 <Link 
                     to='/'
-                    className={dark ? 'dark' : 'links'}
+                    className={headerState ? 'dark' : 'links'}
                     onClick={() => handleFalse()}
                 >
                     Inicio
                 </Link>
                 <Link 
                     to='about' 
-                    className={dark ? 'dark' : 'links'}
+                    className={headerState ? 'dark' : 'links'}
                     onClick={() => handleTrue()}
                 >
                         Acerca de..
                 </Link>
                 <Link
                     to='projects'
-                    className={dark ? 'dark' : 'links'}
+                    className={headerState ? 'dark' : 'links'}
                     onClick={() => handleFalse()}
                 >
                     Proyectos
                 </Link>
                 <Link 
                     to='contact'
-                    className={dark ? 'dark' : 'links'} 
+                    className={headerState ? 'dark' : 'links'} 
                     onClick={() => handleTrue()}
                 >
                         Contacto

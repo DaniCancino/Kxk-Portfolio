@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import H7 from '../../assets/H7.png';
+import {Dark} from '../../redux/Actions';
+import {useDispatch} from 'react-redux'
 
 
 
 const About = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const dispatch = useDispatch()
 
   const variants1 = {
     hidden: { y: 100, opacity: 0 },
@@ -58,6 +61,11 @@ const About = () => {
         delay: 0.35
         }
     }
+  }
+
+  const handleClick = () =>{
+    dispatch(Dark())
+    window.scrollTo(0,0)
   }
 
 
@@ -120,6 +128,7 @@ const About = () => {
           <Link 
             to='/about'
             className='button-about'
+            onClick={() => handleClick()}
           >
             Descubre más
           </Link>
