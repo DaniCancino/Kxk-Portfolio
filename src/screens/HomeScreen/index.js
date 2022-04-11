@@ -4,6 +4,7 @@ import Cover from '../../components/Cover/Cover';
 import About from '../../components/About/About';
 import Projects from '../../components/Projects/Projects';
 import Contact from '../../components/Contacto/Contact';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -16,6 +17,7 @@ const Home = () =>{
             <About />
             <Projects />
             <Contact />
+            <Footer />
         </div>
     )
 }

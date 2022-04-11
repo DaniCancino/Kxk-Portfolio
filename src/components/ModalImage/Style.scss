@@ -8,43 +8,110 @@
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
-    box-sizing: border-box;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
-    .carousel{
+    .close-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 50px;
+        margin-right: 80px;
+        color: #fff;
+        transition: 0.3s;
+    }
+    .close-button:hover{
+        cursor: pointer;
+        color: #3DD0CE;
+        transform: scale(1.07, 1.07);
+    }
+    .product-images-slider {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        .slide{
-            height: 63vh;
-            .image{
-                margin: 0 auto;
+        max-width: 60%;
+        height: 70%;
+        margin-top: 3%;
+        .swiper-slide {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            img {
+                max-width: 100%;
                 height: 100%;
-                width: auto;
-                .picture-carousel{
-                    max-height: 100%;
-                    width: auto;
-                }
             }
         }
+    
+        .swiper-button-prev {
+            left: 30;
+            color: rgb(255, 255, 255);
+        }
+        .swiper-button-prev:active{
+            color:#3DD0CE
+        }
+    
+        .swiper-button-next {
+            right: 30;
+            color: rgb(255, 255, 255);
+        }
+        .swiper-button-next:active{
+            color: #3DD0CE
+        } 
     }
 }
 
 
 
-
-@media only screen and (max-width: 1200px){
+@media (max-width: 1366px){
     .ModalImage{
-        .carousel{
-            height: 90vh;
-            .slide{
-                .image{
-                    margin: 10vh auto;
-                    width: 100vw;
-                }
+        .product-images-slider{
+            max-width: 70%;
+        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    .ModalImage{
+        .product-images-slider{
+            max-width: 90%;
+            height: 50%;
+        }
+    }
+}
+
+
+@media (max-width: 912px){
+    .ModalImage{
+        .product-images-slider{
+            height: 40%;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 414px){
+    .ModalImage{
+        .close-button{
+            margin-right: 40px;
+            margin-top: 40px;
+        }
+        .product-images-slider{
+            max-width: 95%;
+            height: 30%;
+            .swiper-button-prev{
+                display: none;
             }
         }
     }
 }
+
+

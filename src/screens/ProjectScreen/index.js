@@ -2,6 +2,7 @@ import React from 'react'
 import ImageCard from '../../components/ImageCard/ImageCard';
 import './Style.css';
 import projects from '../../Data/Data';
+import Footer from '../../components/Footer/Footer'
 
 const ProjectScreen = () => {
   
@@ -11,6 +12,7 @@ const ProjectScreen = () => {
       <div className='card-projects-container'>
       {projects.map(el => <ImageCard srcImage={el} key={el.indexOf()}/>)}
       </div>
+      <Footer />
     </div>
   )
 }
