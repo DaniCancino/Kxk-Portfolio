@@ -13,3 +13,17 @@ export function Light (){
         payload: false
     }
 }
+
+export function Show (){
+    return{
+        type: 'SHOW',
+        payload: true
+    }
+}
+
+export function Close (){
+    return{
+        type: 'CLOSE',
+        payload: false
+    }
+}

@@ -21,13 +21,45 @@
   height: 100%;
   -webkit-filter: grayscale(0.9);
           filter: grayscale(0.9);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .ImageCard .card-project:hover {
   cursor: pointer;
   -webkit-filter: none;
           filter: none;
+}
+
+@media (max-width: 1024px) {
+  .ImageCard {
+    width: 650px;
+    height: 450px;
+  }
+  .ImageCard .card-project {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .ImageCard {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 390px) {
+  .ImageCard {
+    width: 370px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 375px) {
+  .ImageCard {
+    width: 350px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

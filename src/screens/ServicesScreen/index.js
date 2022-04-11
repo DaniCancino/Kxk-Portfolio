@@ -1,11 +1,10 @@
 import React from 'react'
-import ModalImage from '../../components/ModalImage/ModalImage';
 import './Style.css';
 
 const ServicesScreen = () => {
   return (
     <div className='ServicesScreen'>
-        <ModalImage />
+        <h1>This is the services screen</h1>
     </div>
   )
 }

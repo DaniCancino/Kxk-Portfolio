@@ -5,16 +5,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs} from 'swiper';
 import 'swiper/css/bundle';
 import { FaTimes } from "react-icons/fa";
+import {useDispatch} from 'react-redux'
 
-const ModalImage = () => {
+const ModalImage = ({close}) => {
   const [activeThumb, setActiveThumb] = useState()
 
   SwiperCore.use([Navigation, Pagination, Controller, Thumbs])
+  const dispatch = useDispatch()
+
+  const handleClose = () =>{
+    dispatch(close())
+  }
 
  
   return (
     <div className='ModalImage'>
-      <div className='close-button'><FaTimes size={35} /></div>
+      <div className='close-button'><FaTimes size={35}  onClick={() => handleClose()}/></div>
       <Swiper
             loop={true}
             spaceBetween={10}

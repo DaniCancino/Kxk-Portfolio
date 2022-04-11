@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #101010;
     .close-button{
         position: absolute;
         top: 0;
@@ -90,9 +90,6 @@
         .product-images-slider{
             height: 40%;
         }
-        .swiper-button-next{
-            display: none;
-        }
     }
 }
 
@@ -105,9 +102,12 @@
             margin-top: 40px;
         }
         .product-images-slider{
-            max-width: 95%;
-            height: 30%;
+            max-width: 98%;
+            height: 35%;
             .swiper-button-prev{
+                display: none;
+            }
+            .swiper-button-next{
                 display: none;
             }
         }
