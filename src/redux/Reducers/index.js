@@ -1,6 +1,8 @@
 const initialState={
     dark: false,
-    modal: false
+    modal: false,
+    project: [],
+    name: ''
 }
 
 
@@ -25,6 +27,11 @@ export default function rootReducer (state= initialState, action){
             return{
                 ...state,
                 modal: action.payload
+            }
+        case 'NAME':
+            return{
+                ...state,
+                name: action.payload
             }
         default:
             return{

@@ -27,3 +27,10 @@ export function Close (){
         payload: false
     }
 }
+
+export function Name (e){
+    return{
+        type: 'NAME',
+        payload: e
+    }
+}
