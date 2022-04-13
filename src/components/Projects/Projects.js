@@ -7,6 +7,7 @@ import milencinos from '../../assets/projects/milencinos.jpg';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MdHorizontalRule } from "react-icons/md";
+import { Link } from 'react-router-dom'; 
 
 const Projects = () => {
   const controls = useAnimation();
@@ -76,6 +77,10 @@ const Projects = () => {
     }
   }
 
+
+  const handleClick = () =>{
+    window.scrollTo(0,0)
+  }
 
   useEffect(() => {
     if (inView) {
@@ -147,6 +152,15 @@ const Projects = () => {
               </motion.div>
             </div>
           </motion.div>
+          <div>
+            <Link
+              to='projects'
+              className='link-project-home'
+              onClick={() => handleClick()}
+            >
+              Ver todos
+            </Link>
+          </div>
         </div>
     </div>
   )

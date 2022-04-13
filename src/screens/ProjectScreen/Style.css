@@ -48,7 +48,7 @@
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1024px) {

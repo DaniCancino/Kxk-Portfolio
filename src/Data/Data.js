@@ -1,6 +1,8 @@
 const projects = [
     {
         name : 'dubai',
+        fullName: 'Fachada de Villa PK',
+        city: 'Dubai',
         images:[
             "https://ik.imagekit.io/9a8qm62ljgy/Dubai/MOD_1_gKxq6kSj6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649814233047",
             "https://ik.imagekit.io/9a8qm62ljgy/Dubai/MOD_3_bXbqc1BEX.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649814239630",
@@ -18,6 +20,8 @@ const projects = [
     },
     {
         name: 'cocina',
+        fullName: 'Cocina AB',
+        city: 'México',
         images:[
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/Cocina/RENDER_12_hm4Q5rkn7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649814644103",
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/Cocina/RENDER_4_YKaUMNhuT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649814646352",
@@ -29,6 +33,8 @@ const projects = [
     },
     {
         name: 'apto',
+        fullName: 'Apartamento HG',
+        city: 'México',
         images:[
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/APTO/H5_tMPAMfTu5-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649814882331",
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/APTO/H7_opIk8dZOY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649814881640",
@@ -48,6 +54,8 @@ const projects = [
     },
     {
         name: 'milencinos',
+        fullName: 'Villa Milencinos DM',
+        city: 'México',
         images:[
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/Milencinos/RENDER_14_Hq-rQXI5RH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649815249181",
             "https://ik.imagekit.io/9a8qm62ljgy/Mexico/Milencinos/RENDER_2_T-uh-hr9X.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649815243628",
@@ -68,6 +76,8 @@ const projects = [
     },
     {
         name: 'justin',
+        fullName: 'Cocina Empresarial',
+        city: 'USA',
         images: [
             "https://ik.imagekit.io/9a8qm62ljgy/USA/Justin/1_sM10oyuWV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649820534308",
             "https://ik.imagekit.io/9a8qm62ljgy/USA/Justin/2_818k7Jm2K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649820534667",
@@ -86,6 +96,8 @@ const projects = [
     },
     {
         name: 'publicity',
+        fullName: 'Oficinas Publicity',
+        city: 'Venezuela',
         images: [
             "https://ik.imagekit.io/9a8qm62ljgy/Venezuela/Publicity/R8.8.3_-8rum7hOIS.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649820976982",
             "https://ik.imagekit.io/9a8qm62ljgy/Venezuela/Publicity/R8.5_3SycUHTya.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649820896293",

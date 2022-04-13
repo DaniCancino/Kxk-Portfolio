@@ -91,6 +91,25 @@
                 width: 70%;
             }
         }
+        .link-project-home{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 35px;
+            padding: 5px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            margin-bottom: 40px;
+            transition: 0.5s;
+        }
+        .link-project-home:hover{
+            background-color: $second-aux;
+            color: #101010;
+            border: 1px solid #101010;
+        }
     }
 }
 

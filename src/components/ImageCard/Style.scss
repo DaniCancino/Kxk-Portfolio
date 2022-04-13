@@ -2,18 +2,31 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
     width: 500px;
-    height: 350px;
+    max-height: 350px;
     .card-project{
         width: 100%;
-        height: 100%;
+        height: 80%;
         filter: grayscale(0.9);
-        transition: 0.5s;
+        transition: 0.4s;
     }
-    .card-project:hover{
+    .down-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: 0.4s;
+    }
+}
+
+.ImageCard:hover{
+    cursor: pointer;
+    .card-project{
         cursor: pointer;
         filter: none;
+    }
+    .down-text-img{
+        color: #3DD0CE
     }
 }
 
@@ -23,7 +36,9 @@
     .ImageCard{
         width: 650px;
         height: 450px;
+        align-items: center;
         .card-project{
+            height: 95%;
             filter: none;
         }
     }

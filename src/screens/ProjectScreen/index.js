@@ -42,7 +42,9 @@ const ProjectScreen = () => {
       <div className='Project-container'> 
       <h1 className='title-projectScrenn'>Proyectos</h1>
       <div className='card-projects-container'>
-      {projects.map(el => <ImageCard srcImage={el.images[0]} key={el.name} show={handleShow} value={el.name}/>)}
+      {projects.map(el => 
+      <ImageCard srcImage={el.images[0]} key={el.name} show={handleShow} value={el.name} fullname={el.fullName} city={el.city}/>
+      )}
       </div>
       </div>
   }

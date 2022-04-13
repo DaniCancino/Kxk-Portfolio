@@ -9,34 +9,61 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   width: 500px;
-  height: 350px;
+  max-height: 350px;
 }
 
 .ImageCard .card-project {
   width: 100%;
-  height: 100%;
+  height: 80%;
   -webkit-filter: grayscale(0.9);
           filter: grayscale(0.9);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.ImageCard .card-project:hover {
+.ImageCard .down-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ImageCard:hover {
+  cursor: pointer;
+}
+
+.ImageCard:hover .card-project {
   cursor: pointer;
   -webkit-filter: none;
           filter: none;
+}
+
+.ImageCard:hover .down-text-img {
+  color: #3DD0CE;
 }
 
 @media (max-width: 1024px) {
   .ImageCard {
     width: 650px;
     height: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .ImageCard .card-project {
+    height: 95%;
     -webkit-filter: none;
             filter: none;
   }
