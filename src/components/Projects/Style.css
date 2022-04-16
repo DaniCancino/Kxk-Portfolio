@@ -197,6 +197,7 @@
 .Projects .project-container .link-project-home:hover {
   background-color: #3DD0CE;
   color: #101010;
+  font-weight: 500;
   border: 1px solid #101010;
 }
 

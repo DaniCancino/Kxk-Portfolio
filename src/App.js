@@ -5,17 +5,20 @@ import AboutScreen from './screens/AboutScreen';
 import Header from './components/Header/'
 import ProjectScreen from './screens/ProjectScreen';
 import ServicesScreen from './screens/ServicesScreen';
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<AboutScreen />} />
-        <Route path='/projects' element={<ProjectScreen />} />
-        <Route path='/services' element={<ServicesScreen />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<AboutScreen />} />
+          <Route path='/projects' element={<ProjectScreen />} />
+          <Route path='/services' element={<ServicesScreen />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
