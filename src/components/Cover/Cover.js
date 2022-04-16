@@ -1,7 +1,7 @@
 import React from 'react'
 import { CgInstagram } from "react-icons/cg";
 import { RiBehanceLine } from "react-icons/ri";
-import video from '../../assets/video2.mp4'
+import video from '../../assets/video.mp4'
 import './Style.css'
 import { motion, AnimatePresence } from 'framer-motion'
 
