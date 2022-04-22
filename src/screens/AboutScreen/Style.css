@@ -13,9 +13,15 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #f6f6f6;
   color: #101010;
+}
+
+.AboutScreen .about-page-title {
+  font-size: 6rem;
+  margin-top: 100px;
+  opacity: 0.2;
 }
 
 .AboutScreen .about-container {
@@ -26,13 +32,180 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.AboutScreen .about-container .subtitle-page-about {
+  font-size: 2.2rem;
+}
+
+.AboutScreen .about-container .paragraph-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.AboutScreen .about-container .paragraph-container .about-paragraph {
+  width: 47%;
+  height: auto;
+  text-align: left;
+  line-height: 25px;
+}
+
+.AboutScreen .portada-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  height: 500px;
+}
+
+.AboutScreen .portada-container .portada {
+  width: 47%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.AboutScreen .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 75%;
+  height: auto;
+}
+
+.AboutScreen .team-container .team-title {
+  font-size: 5rem;
+  margin-top: 70px;
+  letter-spacing: 10px;
+  opacity: 0.2;
+}
+
+.AboutScreen .team-container .krismary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.AboutScreen .team-container .krismary-container .krismary {
+  width: 50%;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.AboutScreen .team-container .krismary-container .krismary-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 47%;
+  height: 450px;
+}
+
+.AboutScreen .team-container .walter-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin: 80px 0;
+}
+
+.AboutScreen .team-container .walter-contain .walter-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 47%;
+  height: 450px;
+}
+
+.AboutScreen .team-container .walter-contain .walter {
+  width: 50%;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=Style.css.map */
