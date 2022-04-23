@@ -13,21 +13,24 @@ const AboutScreen = () => {
   const [ref, inView] = useInView();
 
   const variants1 = {
-    hidden: { opacity: 0 },
+    hidden: { y: 100, opacity: 0 },
     show: {
-        opacity: 0.2,
+        y: 0,
+        opacity: 0.15,
         transition: {
-        duration: 0.5
+        duration: 1.3
         }
     }
   }
 
   const variants2 = {
-    hidden: { opacity: 0 },
+    hidden: { y: 200, opacity: 0 },
     show: {
+        y: 0,
         opacity: 1,
         transition: {
-        duration: 1,
+        duration: 1.3,
+        delay: 0.2
         }
     }
   }

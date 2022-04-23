@@ -1,13 +1,62 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Style.css';
 import Contact from '../../components/Contacto/Contact'
 import Footer from '../../components/Footer/Footer'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ServicesScreen = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+
+  const variants1 = {
+    hidden: { y: 100, opacity: 0 },
+    show: {
+        y: 0,
+        opacity: 0.15,
+        transition: {
+        duration: 1.3
+        }
+    }
+  }
+
+  const variants2 = {
+    hidden: { y: 200, opacity: 0 },
+    show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+        duration: 1.3,
+        delay: 0.2
+        }
+    }
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("show");
+    }
+  }, [controls, inView])
+
+
   return (
     <div className='ServicesScreen'>
-        <h1 className='services-title'>Nuestros Servicios</h1>
-        <div className='services-deliver'>
+        <motion.h1
+          className='services-title'
+          variants={variants1}
+          initial='hidden'
+          animate= {controls}
+          ref={ref}
+        >
+          Nuestros Servicios
+        </motion.h1>
+        <motion.div 
+          className='services-deliver'
+          variants={variants2}
+          initial='hidden'
+          animate= {controls}
+        >
           <p>Al pedir un proyecto de diseño, obtienes:</p>
           <ul>
             <li>2/3 opciones de diseño.</li>
@@ -20,7 +69,7 @@ const ServicesScreen = () => {
             <li>Especificación de materiales de acabado, muebles y 
             accesorios de iluminación.</li>
           </ul>
-        </div>
+        </motion.div>
         <div className='services-need'>
           <p>¿Que necesitamos?</p>
           <ul>
