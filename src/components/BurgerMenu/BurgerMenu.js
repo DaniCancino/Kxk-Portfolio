@@ -25,10 +25,12 @@ const BurgerMenu = () => {
 
     const handleTrue = () =>{
         dispatch(Dark())
+        handleClose()
     }
 
     const handleFalse = () =>{
         dispatch(Light())
+        handleClose()
     }
 
 

@@ -121,7 +121,7 @@
 
 @media (max-width: 414px) {
   .ModalImage .close-button {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-top: 40px;
   }
   .ModalImage .product-images-slider {

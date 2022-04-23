@@ -25,7 +25,7 @@ const AboutScreen = () => {
       </div>
       <div className='portada-container'>
           <img src={firstPhoto} alt='portada team' className='portada' />
-          <img src={secondPhoto} alt='portada team' className='portada' />
+          <img src={secondPhoto} alt='portada team' className='portada' id='second'/>
       </div>
       <div className='team-container'>
         <h2 className='team-title'>TEAM</h2>
