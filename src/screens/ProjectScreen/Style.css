@@ -63,5 +63,8 @@
   .ProjectScreen .Project-container .title-projectScrenn {
     font-size: 4rem;
   }
+  .ProjectScreen .Project-container .card-projects-container {
+    margin-bottom: 80px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

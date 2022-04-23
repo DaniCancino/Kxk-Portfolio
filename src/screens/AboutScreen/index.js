@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Style.css';
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Footer from '../../components/Footer/Footer'
 import firstPhoto from '../../assets/portada.JPG'
 import secondPhoto from '../../assets/portada2.JPG'
@@ -7,12 +9,55 @@ import krismary from '../../assets/krismary.JPG'
 import walter from '../../assets/walter.JPG'
 
 const AboutScreen = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  const variants1 = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 0.2,
+        transition: {
+        duration: 1
+        }
+    }
+  }
+
+  const variants2 = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+        duration: 1.5,
+        }
+    }
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("show");
+    }
+  }, [controls, inView]);
+
+
   return (
     <div 
       className='AboutScreen'
     >
-      <h1 className='about-page-title'>Acerca de Nostros</h1>
-      <div className='about-container'>
+      <motion.h1 
+        className='about-page-title'
+        variants={variants1}
+        initial='hidden'
+        animate= {controls}
+        ref={ref}
+      >
+          Acerca de Nostros
+      </motion.h1>
+      <motion.div 
+        className='about-container'
+        variants={variants2}
+        initial='hidden'
+        animate= {controls}
+      >
         <h2 className='subtitle-page-about'>Equipo orientado al resultado</h2>
         <div className='paragraph-container'>
           <p className='about-paragraph'>
@@ -22,11 +67,16 @@ const AboutScreen = () => {
             Nos centramos en crear un diseño individual para cada cliente, así como en encontrar soluciones creativas e individuales para cada proyecto. Tenemos una experiencia considerable en diseño de interiores también cooperando con otros diseñadores y estudios arquitectónicos.
           </p>
         </div>
-      </div>
-      <div className='portada-container'>
+      </motion.div>
+      <motion.div 
+        className='portada-container'
+        variants={variants2}
+        initial='hidden'
+        animate= {controls}
+      >
           <img src={firstPhoto} alt='portada team' className='portada' />
           <img src={secondPhoto} alt='portada team' className='portada' id='second'/>
-      </div>
+      </motion.div>
       <div className='team-container'>
         <h2 className='team-title'>TEAM</h2>
         <div className='krismary-container'>
