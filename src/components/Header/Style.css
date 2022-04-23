@@ -24,7 +24,7 @@
 }
 
 .Header .logo {
-  width: 100px;
+  width: 90px;
   height: 80px;
   margin-left: 70px;
 }
@@ -67,6 +67,10 @@
 }
 
 .Header .links-container .links:hover {
+  color: #3DD0CE;
+}
+
+.Header .links-container .dark:hover {
   color: #3DD0CE;
 }
 

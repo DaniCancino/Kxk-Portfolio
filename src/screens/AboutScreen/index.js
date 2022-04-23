@@ -17,7 +17,7 @@ const AboutScreen = () => {
     show: {
         opacity: 0.2,
         transition: {
-        duration: 1
+        duration: 0.5
         }
     }
   }
@@ -27,7 +27,7 @@ const AboutScreen = () => {
     show: {
         opacity: 1,
         transition: {
-        duration: 1.5,
+        duration: 1,
         }
     }
   }

@@ -4,10 +4,111 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #f6f6f6;
     color: #101010;
     .services-title{
+        font-size: 6rem;
         margin-top: 100px;
+        opacity: 0.2;
+    }
+    .services-deliver{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 35%;
+        height: auto;
+        p{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        ul{
+            line-height: 30px;
+        }
+    }
+    .services-need{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 35%;
+        height: auto;
+        margin-top: 50px;
+        p{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        ul{
+            line-height: 30px;
+        }
+    }
+}
+
+
+
+@media(max-width: 930px){
+    .ServicesScreen{
+        .services-title{
+            font-size: 4.5rem;
+        }
+        .services-deliver{
+            width: 65%;
+        }
+        .services-need{
+            width: 65%;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+
+@media(max-width: 700px){
+    .ServicesScreen{
+        .services-title{
+            font-size: 3.5rem;
+        }
+        .services-deliver{
+            width: 65%;
+        }
+        .services-need{
+            width: 65%;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+@media(max-width:420px){
+    .ServicesScreen{
+        .services-title{
+            font-size: 2.5rem;
+        }
+        .services-deliver{
+            width: 90%;
+        }
+        .services-need{
+            width: 90%;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+@media(max-width:390px){
+    .ServicesScreen{
+        .services-title{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media(max-width:315px){
+    .ServicesScreen{
+        .services-title{
+            font-size: 1.7rem;
+        }
     }
 }
