@@ -106,7 +106,7 @@ const About = () => {
                   initial='hidden'
                   animate= {controls}
               >
-                  KxKarquitectura está conformado por Walter Kuttel y Krismary Chacón. Nos especializamos en diseños arquitectonicos y de interiorismo, modelado 3D, renderizado y tours virtuales.<br/>
+                  KxKarquitectura está conformado por Walter Küttel y Krismary Chacón. Nos especializamos en diseños arquitectonicos y de interiorismo, modelado 3D, renderizado y tours virtuales.<br/>
                   Ofrecemos una visión general de la amplia gama de diseños en diferentes tipos de entornos.<br />
                   Nuestro trabajo se caracteriza por la simplicidad, modernidad y elegancia. Siempre de la mano de nuestros clientes.
               </motion.p>

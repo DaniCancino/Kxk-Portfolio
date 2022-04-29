@@ -91,7 +91,7 @@ const AboutScreen = () => {
         </div>
         <div className='walter-contain'>
           <div className='walter-about'>
-            <h3>Walter Kuttel - Arquitecto encargado de la visualizacion 3D.</h3>
+            <h3>Walter Küttel - Arquitecto encargado de la visualizacion 3D.</h3>
             <p>El estilo en el interior implica un enfoque único e inusual para crear visualizaciones, El éxito de cualquier proyecto depende no solo de la originalidad del diseño, sino también de la belleza de la luz, la precisión del color y la calidad de las texturas.</p>
           </div>
           <img src={walter} alt='walter' className='walter' />

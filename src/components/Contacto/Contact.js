@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './Style.css'
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
@@ -10,13 +10,13 @@ const Contact = () => {
     name : '',
     email : '',
     subject: '',
-    text: ''
+    message: ''
   }
 
+  const ref = useRef()
   
   const [form, setForm] = useState(initialState);
   const [load, setLoad] = useState(false);
-  
   
 
   const handleChange = (e) =>{
@@ -33,11 +33,11 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoad(true)
-    if(!form.name || !form.email || !form.subject || !form.text){
+    if(!form.name || !form.email || !form.subject || !form.message){
         setLoad(false)
         swal("Error", "Asegurate de llenar todos lo campos correctamente.", "error");
     }else{
-        emailjs.sendForm('service_8azqdv3', 'template_pa5fhcn', form.current, 'user_XWEOmi1dwZVxRyxRY2VO5')
+        emailjs.sendForm('service_2vjlhll', 'template_gzmnkag', ref.current, 'wN4lCfJtfzhJgzl37')
         .then((result) => {
             setLoad(false)
             console.log(result.text);
@@ -46,6 +46,7 @@ const Contact = () => {
         }, (error) => {
             swal("Error", error.text, "error");
             console.log(error.text);
+            setLoad(false)
         });
     }
   };
@@ -71,7 +72,7 @@ const Contact = () => {
          </div>
          <div className='contact-form'>
          {load ? <div className="loader" ><ClipLoader size={50} color="#3DD0CE" loading={load}/></div> : 
-            <form className='form-container' onSubmit={sendEmail} ref={form}>
+            <form className='form-container' onSubmit={sendEmail} ref={ref}>
               <input 
                 type='text'
                 className='name'
@@ -104,9 +105,9 @@ const Contact = () => {
 
               <textarea 
                 className='message'
-                name='text'
+                name='message'
                 placeholder='Hablanos sobre tu proyecto'
-                value={form.text}
+                value={form.message}
                 onChange={handleChange}
                 autoComplete= 'off'
               />

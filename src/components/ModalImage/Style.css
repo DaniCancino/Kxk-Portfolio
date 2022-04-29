@@ -82,6 +82,10 @@
   height: 100%;
 }
 
+.ModalImage .product-images-slider .swiper-pagination-bullet-active {
+  background-color: #3DD0CE;
+}
+
 .ModalImage .product-images-slider .swiper-button-prev {
   left: 30;
   color: white;

@@ -41,11 +41,6 @@
 }
 
 .BurgerMenu .Open-Menu .close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 35px;
-  margin-right: 55px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -63,15 +58,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 60%;
-  margin-top: 60px;
+  height: 50%;
+  margin-top: 40px;
 }
 
 .BurgerMenu .Open-Menu .links-burger-container .burger-links {
@@ -91,11 +86,8 @@
   .BurgerMenu .Open-Menu {
     width: 25%;
   }
-  .BurgerMenu .Open-Menu .close-button {
-    margin-right: 32px;
-  }
   .BurgerMenu .Open-Menu .links-burger-container {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=Style.css.map */

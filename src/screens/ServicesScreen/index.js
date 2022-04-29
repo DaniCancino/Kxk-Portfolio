@@ -60,7 +60,7 @@ const ServicesScreen = () => {
           <p>Al pedir un proyecto de diseño, obtienes:</p>
           <ul>
             <li>2/3 opciones de diseño.</li>
-            <li>Visualización 3-D de espacios (4 - 6 vistas para cada espacios).</li>
+            <li>Visualización 3D de espacios (4 - 6 vistas para cada espacio).</li>
             <li>Plano de medición.</li>
             <li>Plano de distribución de muebles.</li>
             <li>Planos de Instalaciones eléctricas.</li>

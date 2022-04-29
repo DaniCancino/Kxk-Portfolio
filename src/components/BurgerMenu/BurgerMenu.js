@@ -48,8 +48,8 @@ const BurgerMenu = () => {
                 transition={{type: 'Spring', duration: 0.3, bounce: 1, stiffness: 50 }}
                 exit={{x: '200vw', duration: 0.7}}
             >
-                <span onClick={() => handleClose()} className='close-button'><FaArrowRight size={32} /></span>
                 <div className='links-burger-container'>
+                <span onClick={() => handleClose()} className='close-button'><FaArrowRight size={32} /></span>
                     <Link 
                         to='/' 
                         className='burger-links' 
